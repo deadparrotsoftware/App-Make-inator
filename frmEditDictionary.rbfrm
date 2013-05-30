@@ -229,17 +229,20 @@ End
 #tag WindowCode
 	#tag Method, Flags = &h0
 		Sub PopulateListFromDefault()
-		  dim d as new Dictionary
+		  dim dictTheDict as new Dictionary
 		  
-		  d = GetDictFromString(tempDict)
+		  dictTheDict = GetDictFromString(tempDict)
 		  dim i as integer
+		  
+		  dim s as string
 		  
 		  listDict.DeleteAllRows
 		  
-		  if d.Count > 0 then
-		    for i = 0 to d.Count - 1
-		      listDict.AddRow d.Key(i)
-		      listDict.Cell(listDict.LastIndex,1) = d.Value(d.Key(i))
+		  if dictTheDict.Count > 0 then
+		    for i = 0 to dictTheDict.Count - 1
+		      s = dictTheDict.Key(i)
+		      frmEditDictionary.listDict.AddRow s
+		      frmEditDictionary.listDict.Cell(frmEditDictionary.listDict.LastIndex,1) = dictTheDict.Value(dictTheDict.Key(i))
 		    next
 		  end if
 		End Sub

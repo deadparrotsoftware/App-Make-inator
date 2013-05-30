@@ -182,6 +182,7 @@ Begin Window frmProject
       Width           =   100
    End
    Begin Timer timeFirstRun
+      Enabled         =   True
       Height          =   32
       Index           =   -2147483648
       Left            =   -59
@@ -193,6 +194,7 @@ Begin Window frmProject
       TabPanelIndex   =   0
       TabStop         =   True
       Top             =   454
+      Visible         =   True
       Width           =   32
    End
    Begin Canvas canScroller
@@ -306,6 +308,7 @@ Begin Window frmProject
       Width           =   434
    End
    Begin Timer timeNav
+      Enabled         =   True
       Height          =   32
       Index           =   -2147483648
       Left            =   -59
@@ -317,6 +320,7 @@ Begin Window frmProject
       TabPanelIndex   =   0
       TabStop         =   True
       Top             =   304
+      Visible         =   True
       Width           =   32
    End
    Begin Label lblInfo
@@ -492,6 +496,7 @@ Begin Window frmProject
       Width           =   22
    End
    Begin Timer timeMap
+      Enabled         =   True
       Height          =   32
       Index           =   -2147483648
       Left            =   -59
@@ -503,6 +508,7 @@ Begin Window frmProject
       TabPanelIndex   =   0
       TabStop         =   True
       Top             =   530
+      Visible         =   True
       Width           =   32
    End
 End
@@ -524,7 +530,7 @@ End
 		  
 		  if app.kForUbuntuStore = true then
 		    'HelpRegisterIlluminationSoftwareCreator.Visible = false
-		    UntitledSeparator3.Visible = false
+		    'UntitledSeparator3.Visible = false
 		  end if
 		  
 		  populateListObjects
@@ -1678,7 +1684,7 @@ End
 		      
 		      
 		      if f2.Parent.Child(ReplaceAll(f2.Name, ".mxml", ".swf")) <> nil then
-		        'f2 = f2.Parent.Child(ReplaceAll(f2.Name, ".mxml", ".swf")) 
+		        'f2 = f2.Parent.Child(ReplaceAll(f2.Name, ".mxml", ".swf"))
 		        
 		        fHTML = f2.Parent.Child(modVariables.ProjectApplicationName + ".html")
 		        If fHTML <> Nil then

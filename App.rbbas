@@ -9,7 +9,7 @@ Inherits Application
 
 	#tag Event
 		Sub Open()
-		  
+		  'frmSplash.Show
 		  
 		  // Toggle this to set whether this build is for the Ubuntu store or not
 		  
@@ -22,6 +22,8 @@ Inherits Application
 		  InitPrefFile(".amipreferences")
 		  
 		  modPrefs.ReadAllPrefs
+		  
+		  frmProject.Show
 		End Sub
 	#tag EndEvent
 

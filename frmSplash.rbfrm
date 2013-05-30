@@ -1,15 +1,15 @@
 #tag Window
-Begin Window frmAbout
-   BackColor       =   16777215
+Begin Window frmSplash
+   BackColor       =   &hFFFFFF
    Backdrop        =   ""
    CloseButton     =   True
    Composite       =   False
-   Frame           =   0
+   Frame           =   4
    FullScreen      =   False
-   HasBackColor    =   False
+   HasBackColor    =   True
    Height          =   3.16e+2
    ImplicitInstance=   True
-   LiveResize      =   False
+   LiveResize      =   True
    MacProcID       =   0
    MaxHeight       =   32000
    MaximizeButton  =   False
@@ -17,22 +17,34 @@ Begin Window frmAbout
    MenuBar         =   ""
    MenuBarVisible  =   True
    MinHeight       =   64
-   MinimizeButton  =   False
+   MinimizeButton  =   True
    MinWidth        =   64
    Placement       =   0
-   Resizeable      =   False
-   Title           =   "About Illumination"
+   Resizeable      =   True
+   Title           =   "App-Make-inator"
    Visible         =   True
-   Width           =   6.62e+2
+   Width           =   6.27e+2
+   Begin Timer timeSplash
+      Height          =   32
+      Index           =   -2147483648
+      Left            =   -49
+      LockedInPosition=   False
+      Mode            =   2
+      Period          =   350
+      Scope           =   0
+      TabPanelIndex   =   0
+      Top             =   29
+      Width           =   32
+   End
    Begin Canvas Canvas1
       AcceptFocus     =   ""
       AcceptTabs      =   ""
       AutoDeactivate  =   True
-      Backdrop        =   1557821439
+      Backdrop        =   381265919
       DoubleBuffer    =   False
       Enabled         =   True
       EraseBackground =   True
-      Height          =   130
+      Height          =   128
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
@@ -49,7 +61,41 @@ Begin Window frmAbout
       Top             =   14
       UseFocusRing    =   True
       Visible         =   True
-      Width           =   130
+      Width           =   128
+   End
+   Begin Label StaticText3
+      AutoDeactivate  =   True
+      Bold            =   ""
+      DataField       =   ""
+      DataSource      =   ""
+      Enabled         =   True
+      Height          =   20
+      HelpTag         =   ""
+      Index           =   -2147483648
+      InitialParent   =   ""
+      Italic          =   ""
+      Left            =   160
+      LockBottom      =   ""
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   ""
+      LockTop         =   True
+      Multiline       =   ""
+      Scope           =   0
+      Selectable      =   False
+      TabIndex        =   2
+      TabPanelIndex   =   0
+      Text            =   "Copyright 2010-2013, Bryan Lunduke"
+      TextAlign       =   0
+      TextColor       =   0
+      TextFont        =   "System"
+      TextSize        =   10
+      TextUnit        =   0
+      Top             =   81
+      Transparent     =   False
+      Underline       =   ""
+      Visible         =   True
+      Width           =   229
    End
    Begin Label StaticText1
       AutoDeactivate  =   True
@@ -62,7 +108,7 @@ Begin Window frmAbout
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   ""
-      Left            =   162
+      Left            =   160
       LockBottom      =   ""
       LockedInPosition=   False
       LockLeft        =   True
@@ -71,7 +117,7 @@ Begin Window frmAbout
       Multiline       =   True
       Scope           =   0
       Selectable      =   False
-      TabIndex        =   2
+      TabIndex        =   3
       TabPanelIndex   =   0
       Text            =   "App-Make-inator"
       TextAlign       =   0
@@ -83,7 +129,7 @@ Begin Window frmAbout
       Transparent     =   False
       Underline       =   ""
       Visible         =   True
-      Width           =   257
+      Width           =   229
    End
    Begin Label lblVer
       AutoDeactivate  =   True
@@ -96,7 +142,7 @@ Begin Window frmAbout
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   ""
-      Left            =   162
+      Left            =   160
       LockBottom      =   ""
       LockedInPosition=   False
       LockLeft        =   True
@@ -105,7 +151,7 @@ Begin Window frmAbout
       Multiline       =   True
       Scope           =   0
       Selectable      =   False
-      TabIndex        =   3
+      TabIndex        =   4
       TabPanelIndex   =   0
       Text            =   "1.0.0"
       TextAlign       =   0
@@ -119,13 +165,13 @@ Begin Window frmAbout
       Visible         =   True
       Width           =   126
    End
-   Begin RadLinkLabel RadLinkLabel1
+   Begin Label lblLoading
       AutoDeactivate  =   True
       Bold            =   ""
       DataField       =   ""
       DataSource      =   ""
       Enabled         =   True
-      Height          =   20
+      Height          =   37
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
@@ -139,89 +185,21 @@ Begin Window frmAbout
       Multiline       =   ""
       Scope           =   0
       Selectable      =   False
-      TabIndex        =   4
+      TabIndex        =   5
       TabPanelIndex   =   0
-      Text            =   "Lunduke.com"
+      Text            =   "..."
       TextAlign       =   1
-      TextColor       =   0
-      TextFont        =   "System"
-      TextSize        =   0
-      TextUnit        =   0
-      Top             =   156
-      Transparent     =   False
-      Underline       =   ""
-      Visible         =   True
-      Width           =   130
-   End
-   Begin Label StaticText3
-      AutoDeactivate  =   True
-      Bold            =   ""
-      DataField       =   ""
-      DataSource      =   ""
-      Enabled         =   True
-      Height          =   20
-      HelpTag         =   ""
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Italic          =   ""
-      Left            =   162
-      LockBottom      =   ""
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   ""
-      LockTop         =   True
-      Multiline       =   ""
-      Scope           =   0
-      Selectable      =   False
-      TabIndex        =   9
-      TabPanelIndex   =   0
-      Text            =   "Copyright 2010-2013, Bryan Lunduke"
-      TextAlign       =   0
-      TextColor       =   0
-      TextFont        =   "System"
-      TextSize        =   10
-      TextUnit        =   0
-      Top             =   81
-      Transparent     =   False
-      Underline       =   ""
-      Visible         =   True
-      Width           =   268
-   End
-   Begin Label Label1
-      AutoDeactivate  =   True
-      Bold            =   ""
-      DataField       =   ""
-      DataSource      =   ""
-      Enabled         =   True
-      Height          =   139
-      HelpTag         =   ""
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Italic          =   ""
-      Left            =   162
-      LockBottom      =   ""
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   ""
-      LockTop         =   True
-      Multiline       =   True
-      Scope           =   0
-      Selectable      =   False
-      TabIndex        =   10
-      TabPanelIndex   =   0
-      Text            =   "This software is Open Source and supported by donations from awesome people just like you.\r\n\r\nVisit www.Lunduke.com for more info."
-      TextAlign       =   0
       TextColor       =   &h000000
       TextFont        =   "System"
-      TextSize        =   0
+      TextSize        =   16
       TextUnit        =   0
-      Top             =   156
+      Top             =   259
       Transparent     =   False
       Underline       =   ""
       Visible         =   True
-      Width           =   257
+      Width           =   369
    End
-   Begin Canvas Canvas3
+   Begin Canvas Canvas2
       AcceptFocus     =   ""
       AcceptTabs      =   ""
       AutoDeactivate  =   True
@@ -233,14 +211,14 @@ Begin Window frmAbout
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
-      Left            =   442
+      Left            =   407
       LockBottom      =   ""
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   ""
       LockTop         =   True
       Scope           =   0
-      TabIndex        =   16
+      TabIndex        =   6
       TabPanelIndex   =   0
       TabStop         =   True
       Top             =   14
@@ -248,7 +226,7 @@ Begin Window frmAbout
       Visible         =   True
       Width           =   200
    End
-   Begin Canvas Canvas4
+   Begin Canvas Canvas3
       AcceptFocus     =   ""
       AcceptTabs      =   ""
       AutoDeactivate  =   True
@@ -260,14 +238,14 @@ Begin Window frmAbout
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
-      Left            =   442
+      Left            =   407
       LockBottom      =   ""
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   ""
       LockTop         =   True
       Scope           =   0
-      TabIndex        =   17
+      TabIndex        =   7
       TabPanelIndex   =   0
       TabStop         =   True
       Top             =   226
@@ -275,64 +253,44 @@ Begin Window frmAbout
       Visible         =   True
       Width           =   200
    End
-   Begin RadLinkLabel RadLinkLabel2
-      AutoDeactivate  =   True
-      Bold            =   ""
-      DataField       =   ""
-      DataSource      =   ""
-      Enabled         =   True
-      Height          =   20
-      HelpTag         =   ""
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Italic          =   ""
-      Left            =   20
-      LockBottom      =   ""
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   ""
-      LockTop         =   True
-      Multiline       =   ""
-      Scope           =   0
-      Selectable      =   False
-      TabIndex        =   18
-      TabPanelIndex   =   0
-      Text            =   "Donate"
-      TextAlign       =   1
-      TextColor       =   0
-      TextFont        =   "System"
-      TextSize        =   0
-      TextUnit        =   0
-      Top             =   188
-      Transparent     =   False
-      Underline       =   ""
-      Visible         =   True
-      Width           =   130
-   End
 End
 #tag EndWindow
 
 #tag WindowCode
+	#tag Property, Flags = &h0
+		Counter As Integer
+	#tag EndProperty
+
+
 #tag EndWindowCode
 
+#tag Events timeSplash
+	#tag Event
+		Sub Action()
+		  Counter = Counter + 1
+		  
+		  select case Counter
+		  case 1
+		    lblLoading.Text = "... Initializing Coefficients ..."
+		  case 2
+		    lblLoading.Text = "... Randomizing Goats ..."
+		    
+		  case 3
+		    lblLoading.Text = "... Reticulating Splines ..."
+		    
+		  case 4
+		    timeSplash.Mode = 0
+		    frmProject.Show
+		    frmSplash.Close
+		    
+		  end select
+		End Sub
+	#tag EndEvent
+#tag EndEvents
 #tag Events lblVer
 	#tag Event
 		Sub Open()
 		  me.Text = app.LongVersion
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events RadLinkLabel1
-	#tag Event
-		Sub Action()
-		  ShowURL "http://www.lunduke.com/"
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events RadLinkLabel2
-	#tag Event
-		Sub Action()
-		  ShowURL "http://lunduke.com/?page_id=3500"
 		End Sub
 	#tag EndEvent
 #tag EndEvents
