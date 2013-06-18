@@ -1,8 +1,9 @@
 #tag Window
 Begin Window frmEditDictionary
-   BackColor       =   16777215
-   Backdrop        =   ""
+   BackColor       =   &cFFFFFF00
+   Backdrop        =   0
    CloseButton     =   False
+   Compatibility   =   ""
    Composite       =   False
    Frame           =   1
    FullScreen      =   False
@@ -14,7 +15,7 @@ Begin Window frmEditDictionary
    MaxHeight       =   32000
    MaximizeButton  =   False
    MaxWidth        =   32000
-   MenuBar         =   ""
+   MenuBar         =   0
    MenuBarVisible  =   True
    MinHeight       =   64
    MinimizeButton  =   True
@@ -27,47 +28,47 @@ Begin Window frmEditDictionary
    Begin Listbox listDict
       AutoDeactivate  =   True
       AutoHideScrollbars=   True
-      Bold            =   ""
+      Bold            =   False
       Border          =   True
       ColumnCount     =   2
-      ColumnsResizable=   ""
+      ColumnsResizable=   False
       ColumnWidths    =   ""
       DataField       =   ""
       DataSource      =   ""
       DefaultRowHeight=   -1
       Enabled         =   True
-      EnableDrag      =   ""
-      EnableDragReorder=   ""
+      EnableDrag      =   False
+      EnableDragReorder=   False
       GridLinesHorizontal=   0
       GridLinesVertical=   0
       HasHeading      =   True
       HeadingIndex    =   -1
       Height          =   301
       HelpTag         =   ""
-      Hierarchical    =   ""
+      Hierarchical    =   False
       Index           =   -2147483648
       InitialParent   =   ""
       InitialValue    =   "Key	Value"
-      Italic          =   ""
+      Italic          =   False
       Left            =   20
       LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
-      RequiresSelection=   ""
+      RequiresSelection=   False
       Scope           =   0
-      ScrollbarHorizontal=   ""
+      ScrollbarHorizontal=   False
       ScrollBarVertical=   True
       SelectionType   =   0
       TabIndex        =   0
       TabPanelIndex   =   0
       TabStop         =   True
       TextFont        =   "System"
-      TextSize        =   0
+      TextSize        =   0.0
       TextUnit        =   0
       Top             =   14
-      Underline       =   ""
+      Underline       =   False
       UseFocusRing    =   False
       Visible         =   True
       Width           =   387
@@ -75,9 +76,9 @@ Begin Window frmEditDictionary
    End
    Begin PushButton btnApply
       AutoDeactivate  =   True
-      Bold            =   ""
-      ButtonStyle     =   0
-      Cancel          =   ""
+      Bold            =   False
+      ButtonStyle     =   "0"
+      Cancel          =   False
       Caption         =   "Apply"
       Default         =   True
       Enabled         =   True
@@ -85,60 +86,60 @@ Begin Window frmEditDictionary
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
-      Italic          =   ""
+      Italic          =   False
       Left            =   112
       LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   True
-      LockRight       =   ""
+      LockRight       =   False
       LockTop         =   False
       Scope           =   0
       TabIndex        =   1
       TabPanelIndex   =   0
       TabStop         =   True
       TextFont        =   "System"
-      TextSize        =   0
+      TextSize        =   0.0
       TextUnit        =   0
       Top             =   327
-      Underline       =   ""
+      Underline       =   False
       Visible         =   True
       Width           =   80
    End
    Begin PushButton btnCancel
       AutoDeactivate  =   True
-      Bold            =   ""
-      ButtonStyle     =   0
+      Bold            =   False
+      ButtonStyle     =   "0"
       Cancel          =   True
       Caption         =   "Cancel"
-      Default         =   ""
+      Default         =   False
       Enabled         =   True
       Height          =   20
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
-      Italic          =   ""
+      Italic          =   False
       Left            =   20
       LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   True
-      LockRight       =   ""
+      LockRight       =   False
       LockTop         =   False
       Scope           =   0
       TabIndex        =   2
       TabPanelIndex   =   0
       TabStop         =   True
       TextFont        =   "System"
-      TextSize        =   0
+      TextSize        =   0.0
       TextUnit        =   0
       Top             =   327
-      Underline       =   ""
+      Underline       =   False
       Visible         =   True
       Width           =   80
    End
    Begin BevelButton btnNewRow
       AcceptFocus     =   False
       AutoDeactivate  =   True
-      BackColor       =   0
+      BackColor       =   &c00000000
       Bevel           =   4
       Bold            =   False
       ButtonType      =   0
@@ -151,7 +152,7 @@ Begin Window frmEditDictionary
       HasMenu         =   0
       Height          =   22
       HelpTag         =   ""
-      Icon            =   ""
+      Icon            =   0
       IconAlign       =   0
       IconDX          =   0
       IconDY          =   0
@@ -169,9 +170,9 @@ Begin Window frmEditDictionary
       TabIndex        =   3
       TabPanelIndex   =   0
       TabStop         =   True
-      TextColor       =   0
+      TextColor       =   &c00000000
       TextFont        =   "System"
-      TextSize        =   ""
+      TextSize        =   0.0
       TextUnit        =   0
       Top             =   326
       Underline       =   False
@@ -182,7 +183,7 @@ Begin Window frmEditDictionary
    Begin BevelButton btnDeleteRow
       AcceptFocus     =   False
       AutoDeactivate  =   True
-      BackColor       =   0
+      BackColor       =   &c00000000
       Bevel           =   4
       Bold            =   False
       ButtonType      =   0
@@ -195,7 +196,7 @@ Begin Window frmEditDictionary
       HasMenu         =   0
       Height          =   22
       HelpTag         =   ""
-      Icon            =   ""
+      Icon            =   0
       IconAlign       =   0
       IconDX          =   0
       IconDY          =   0
@@ -213,9 +214,9 @@ Begin Window frmEditDictionary
       TabIndex        =   4
       TabPanelIndex   =   0
       TabStop         =   True
-      TextColor       =   0
+      TextColor       =   &c00000000
       TextFont        =   "System"
-      TextSize        =   ""
+      TextSize        =   0.0
       TextUnit        =   0
       Top             =   326
       Underline       =   False
@@ -223,10 +224,95 @@ Begin Window frmEditDictionary
       Visible         =   True
       Width           =   22
    End
+   Begin PushButton btnImportCSV
+      AutoDeactivate  =   True
+      Bold            =   False
+      ButtonStyle     =   "0"
+      Cancel          =   False
+      Caption         =   "Import CSV"
+      Default         =   False
+      Enabled         =   True
+      Height          =   22
+      HelpTag         =   ""
+      Index           =   -2147483648
+      InitialParent   =   ""
+      Italic          =   False
+      Left            =   256
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      Scope           =   0
+      TabIndex        =   5
+      TabPanelIndex   =   0
+      TabStop         =   True
+      TextFont        =   "System"
+      TextSize        =   0.0
+      TextUnit        =   0
+      Top             =   326
+      Underline       =   False
+      Visible         =   True
+      Width           =   95
+   End
 End
 #tag EndWindow
 
 #tag WindowCode
+	#tag Method, Flags = &h0
+		Sub ImportCSV()
+		  dim f as FolderItem
+		  dim t as TextInputStream
+		  dim theCSV as string
+		  dim lineCount as integer
+		  dim i as integer
+		  dim theLine as string
+		  dim theKey as string
+		  dim theValue as string
+		  
+		  f = GetOpenFolderItem("????")
+		  
+		  if f <> nil then
+		    if f.exists = true then
+		      
+		      Try
+		        t = TextInputStream.Open(f)
+		        theCSV = t.ReadAll
+		        
+		        // Process the new dictionary.
+		        listDict.DeleteAllRows
+		        
+		        lineCount = theCSV.CountFields(EndOfLine)
+		        
+		        if lineCount > 0 then
+		          
+		          for i = 1 to lineCount
+		            
+		            theLine = theCSV.NthField(EndOfLine, i)
+		            theKey = theLine.NthField(",", 1)
+		            theValue = theLine.NthField(",", 2)
+		            
+		            if trim(theKey) <> "" then
+		              listDict.AddRow theKey
+		              listDict.Cell(listDict.LastIndex,1) = theValue
+		            end if
+		            
+		          next
+		          
+		        end if
+		        
+		        
+		      Catch e As IOException
+		        t.Close
+		      End Try
+		      
+		    end if
+		  end if
+		  
+		  
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0
 		Sub PopulateListFromDefault()
 		  dim dictTheDict as new Dictionary
@@ -315,6 +401,13 @@ End
 		  if listDict.ListIndex > -1 then
 		    listDict.RemoveRow(listDict.ListIndex)
 		  end if
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events btnImportCSV
+	#tag Event
+		Sub Action()
+		  ImportCSV
 		End Sub
 	#tag EndEvent
 #tag EndEvents
